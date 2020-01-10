@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { FiGithub } from 'react-icons/fi';
 import { FaPaperPlane } from 'react-icons/fa';
 
 function Navbar() {
@@ -28,17 +27,30 @@ function Navbar() {
                         <div className='navbar-item'>
                             <div className='field is-grouped'>
                                 <p className='control'>
-                                    <a className='button is-success is-rounded' href='' target='_blank' rel='noopener noreferrer'>
-                                        Contact <FaPaperPlane />
-                                    </a>
-                                </p>
-                                <p className='control'>
-                                    <a className='button is-success is-rounded' href='https://github.com/boydbloemsma' target='_blank' rel='noopener noreferrer'>
-                                        Github <FiGithub /> 
+                                    <a className='has-text-success' href='#about'>
+                                        About
                                     </a>
                                 </p>
                             </div>
                         </div>
+
+                        <div className='navbar-item'>
+                            <div className='field is-grouped'>
+                                <p className='control'>
+                                    <a className='has-text-success' href='https://github.com/boydbloemsma' target='_blank' rel='noopener noreferrer'>
+                                        Github
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className='navbar-item'>
+                            <p className='control'>
+                                <a className='button is-success is-rounded' href='#contact'>
+                                    Contact <FaPaperPlane />
+                                </a>
+                            </p>    
+                        </div> 
 
                     </div>
                 </div>
