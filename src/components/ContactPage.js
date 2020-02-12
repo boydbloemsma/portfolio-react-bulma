@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Contact() {
+const Contact = () => {
     return (
         <div className='Contact'>
 
-            <section className='section is-small has-background-info'>
+            <section className='section is-small has-background-dark'>
                 <div className='container'>
                     <h1 className='title has-text-success has-text-centered'>Contact</h1>
                     <div className='columns'>
@@ -36,7 +36,6 @@ function Contact() {
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </section>
@@ -44,4 +43,4 @@ function Contact() {
         </div>
     );
 }
-export default Contact;
+export { Contact as default };
