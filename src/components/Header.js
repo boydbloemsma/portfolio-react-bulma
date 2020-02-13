@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaPaperPlane } from 'react-icons/fa';
 
-export const Header = () => (
-    <nav className='navbar is-dark' role='navigation' aria-label='main navigation'>
+const Header = () => (
+    <nav className='navbar is-dark is-fixed-top' role='navigation' aria-label='main navigation'>
         <div className='navbar-brand'>
             <h1 className='is-size-4'>
                 <Link className='navbar-item has-text-success' to='/'>
@@ -20,6 +20,11 @@ export const Header = () => (
                         <p className='control'>
                             <Link className='has-text-success' to='/'>
                                 Dashboard
+                            </Link>
+                        </p>
+                        <p className='control'>
+                            <Link className='has-text-success' to='/projects'>
+                                Projects
                             </Link>
                         </p>
                         <p className='control'>

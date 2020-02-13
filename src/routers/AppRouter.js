@@ -7,6 +7,8 @@ import AboutPage from '../components/AboutPage';
 import ContactPage from '../components/ContactPage';
 import DashboardPage from '../components/DashboardPage';
 import NotFoundPage from '../components/NotFoundPage';
+import ProjectsPage from '../components/ProjectsPage';
+import Footer from '../components/Footer';
 
 export const history = createHistory();
 
@@ -16,10 +18,12 @@ const AppRouter = () => (
             <Header />
             <Switch>
                 <Route path="/" component={DashboardPage} exact={true} />
+                <Route path="/projects" component={ProjectsPage} />
                 <Route path="/contact" component={ContactPage} />
                 <Route path="/about" component={AboutPage} />
                 <Route component={NotFoundPage} />
             </Switch>
+            <Footer />
         </div>
     </Router>
 );

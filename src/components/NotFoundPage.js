@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const NotFoundPage = () => (
-    <div>
+    <section className="section is-large">
         404 - <Link to="/">Go home</Link>
-    </div>
+    </section>
 );
 
 export default NotFoundPage;
